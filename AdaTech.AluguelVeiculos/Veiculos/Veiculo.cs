@@ -1,4 +1,5 @@
-﻿using AdaTech.AluguelVeiculos.Veiculos.Enums;
+﻿using AdaTech.AluguelVeiculos.Funcionalidades.Reservas;
+using AdaTech.AluguelVeiculos.Veiculos.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,6 +86,10 @@ namespace AdaTech.AluguelVeiculos.Veiculos
         internal decimal AlugarVeiculo (int quantidadeDias)
         {
             return quantidadeDias * _valorDiaria;
+        }
+        internal void Alugado()
+        {
+            _statusCarro = StatusCarroEnum.Alugado;
         }
         internal void DescricaoVeiculo()
         {

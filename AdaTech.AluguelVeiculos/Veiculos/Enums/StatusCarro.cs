@@ -10,7 +10,7 @@ namespace AdaTech.AluguelVeiculos.Veiculos.Enums
     {
         Disponivel = 1,
         Reservado = 2,
-        Indisponivel = 3,
+        Alugado = 3,
         Inativo = 4,
     }
 }

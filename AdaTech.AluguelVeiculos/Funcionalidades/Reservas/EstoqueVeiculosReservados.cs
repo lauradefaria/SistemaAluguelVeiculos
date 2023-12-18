@@ -19,6 +19,10 @@ namespace AdaTech.AluguelVeiculos.Funcionalidades.Reservas
         {
             _listaReservas.RemoveAll(reserva => reserva.Id == id);
         }
+        internal static int QuantidadeReservas()
+        {
+            return _listaReservas.Count;
+        }
 
         internal static Reserva SelecionarReserva(int id)
         {

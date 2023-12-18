@@ -29,7 +29,7 @@ namespace AdaTech.AluguelVeiculos.Funcionalidades.Retiradas
         {
             this._veiculoRetirado = true;
             reserva.DataInicio = DateTime.Now;
-            //reserva.Veiculo.StatusCarro = Veiculo.StatusCarroEnum.Indisponivel;
+            reserva.Veiculo.Alugado();
         }
     }
 }
